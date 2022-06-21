@@ -1,10 +1,26 @@
-import React from "react"
-import './NavBar.css'
+import React, { Component } from "react"
+import 'materialize-css/dist/css/materialize.min.css'
+import logo from '../logo.png'
 
-const NavBar = () => {
-    return <nav>
-
-    </nav>
+export default class NavBar extends Component{
+    render () {
+        return (
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src={logo} style={logoStyle.logoImg}/></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Artículos</a></li>
+                    <li><a href="#">Carrito</a></li>
+                </ul>
+                </div>
+            </nav>  
+        )
+    }
 }
 
-export default NavBar
+const logoStyle = {
+    logoImg: {
+        width: 100,
+    }
+}
