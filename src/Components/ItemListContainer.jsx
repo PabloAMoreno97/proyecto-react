@@ -1,11 +1,12 @@
 import React from 'react';
 
-class ItemListContainer extends React.Component{
-    render() {
-        return (
-            <h1>Hola!</h1>
-        );
-    }
+const ItemListContainer = ({greeting}) => {
+    return (
+        <>
+            <h2>{greeting}</h2>
+            <p>Esta es la lista de artículos</p>
+        </>
+    );
 }
 
 export default ItemListContainer

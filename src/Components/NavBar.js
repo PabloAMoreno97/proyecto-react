@@ -12,7 +12,7 @@ const NavBar = () => {
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Artículos</a></li>
-                <li><a href="#" style={NavBarStyle.cartIcon}><Cart/>0</a></li>
+                <li style={NavBarStyle.cartIcon}><Cart/>0</li>
             </ul>
             </div>
         </nav>
@@ -24,7 +24,8 @@ const NavBarStyle = {
         width: 100,
     },
     cartIcon: {
-        fontSize: '2rem'
+        fontSize: '2rem',
+        marginRight: '1rem'
     }
 }
 
