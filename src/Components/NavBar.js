@@ -1,8 +1,7 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import logo from '../logo.png'
-import Cart from './CardWidget'
-
+import Cart from './CartWidget'
 
 const NavBar = () => {
 	return (
@@ -12,7 +11,7 @@ const NavBar = () => {
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Artículos</a></li>
-                <li style={NavBarStyle.cartIcon}><Cart/>0</li>
+                <li><a style={NavBarStyle.cartIcon}><Cart/>0</a></li>
             </ul>
             </div>
         </nav>
@@ -24,8 +23,8 @@ const NavBarStyle = {
         width: 100,
     },
     cartIcon: {
-        fontSize: '2rem',
-        marginRight: '1rem'
+        display: 'flex',
+        alingItems: 'center',
     }
 }
 

@@ -4,9 +4,7 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = () => {
     return (
-        <button>
-            <FontAwesomeIcon icon={faCartPlus}/>
-        </button>
+        <button><FontAwesomeIcon icon={faCartPlus}/></button>
     );
 }
 
